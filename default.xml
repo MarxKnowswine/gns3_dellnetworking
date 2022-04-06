@@ -1,0 +1,31 @@
+<!--
+WARNING: THIS IS AN AUTO-GENERATED FILE. CHANGES TO IT ARE LIKELY TO BE
+OVERWRITTEN AND LOST. Changes to this xml configuration should be made using:
+  virsh net-edit default
+or other application using the libvirt API.
+-->
+
+<network>
+  <name>default</name>
+  <uuid>f117560d-d063-42d5-b104-8b1ac23c577a</uuid>
+  <forward mode='nat'/>
+  <bridge name='virbr0' stp='on' delay='0'/>
+  <mac address='52:54:00:4a:d8:c2'/>
+  <ip address='10.10.10.1' netmask='255.255.255.0'>
+  <dhcp>
+    <range start='10.10.10.30' end='10.10.10.100'/>
+    <host mac='0c:a2:38:95:00:00' name='OS10_Spine_1' ip='10.10.10.11'/>
+    <host mac='0c:01:da:15:00:00' name='OS10_Spine_2' ip='10.10.10.12'/>
+    <host mac='0c:f6:99:5b:00:00' name='OS10_Leaf_1' ip='10.10.10.13'/>
+    <host mac='0c:f0:c7:4a:00:00' name='OS10_Leaf_2' ip='10.10.10.14'/>
+    <host mac='0c:52:4b:50:00:00' name='OS10_Leaf_3' ip='10.10.10.15'/>
+    <host mac='0c:f0:64:a7:00:00' name='OS10_Leaf_4' ip='10.10.10.16'/>
+    <host mac='0c:86:c3:b6:00:00' name='SONiC_Spine_1' ip='10.10.10.21'/>
+    <host mac='0c:c1:7d:54:00:00' name='SONiC_Spine_2' ip='10.10.10.22'/>
+    <host mac='0c:d3:55:95:00:00' name='SONiC_Leaf_1' ip='10.10.10.23'/>
+    <host mac='0c:6d:aa:0b:00:00' name='SONiC_Leaf_2' ip='10.10.10.24'/>
+    <host mac='0c:26:01:66:00:00' name='SONiC_Leaf_3' ip='10.10.10.25'/>
+    <host mac='0c:0a:a1:d9:00:00' name='SONiC_Leaf_4' ip='10.10.10.26'/>
+  </dhcp>
+  </ip>
+</network>
